@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>字体相似度匹配</title>
+  </head>
+  <body>
+    <h1>相似度匹配</h1>
+    <div>
+        <h1>单(图片/TTF)文件，或压缩包上传，数据库检测</h1>
+        <form action="/font_upload" enctype='multipart/form-data' method='POST'>
+        <input type="file" name="file">
+        <input type="submit" value="上传">
+        </form>
+    </div>
+  <div>
+    <h1>一压缩包，或一图片，或一TTF配对对比检测</h1>
+    <form action="/font_upload1" enctype='multipart/form-data' method='POST'>
+    <input type="file" name="file1">
+    <input type="file" name="file2">
+    <input type="submit" value="上传">
+    </form>
+  </div>
+  
+  </body>
+</html>
+
