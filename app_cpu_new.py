@@ -269,10 +269,10 @@ def return_img_stream(img_local_path):
 @app.route('/')
 def index():
     """Video streaming home page."""
-    # return render_template("index.html")
-    img_stream = return_img_stream(img_path)
-    return render_template('index.html',
-              img_stream=img_stream)
+    return render_template("index.html")
+#     img_stream = return_img_stream(img_path)
+#     return render_template('index.html',
+#               img_stream=img_stream)
 
 @app.route('/error')
 def error():
